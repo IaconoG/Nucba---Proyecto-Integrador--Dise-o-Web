@@ -1,0 +1,128 @@
+:root {
+  --clr-bg: #f6f4ef;
+  --clr-bg-footer: #bfc1b9;
+  /* 60 / 30 / 10 rule */
+  --clr-primary: ; /* 60% */
+  --clr-secondary: ; /* 30% */
+  --clr-accent: #ee4b4a; /* 10% */
+
+  --black: #333;
+  --white: #fff;
+  --gray: #58595c;
+}
+body {
+  background-color: var(--clr-bg);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.btn {
+  color: var(--white);
+  background-color: var(--clr-accent);
+  border-radius: 4rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.4;
+  padding: 0.8rem 1.5rem;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  height: 6rem;
+  background-color: var(--white);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+/* MAIN */
+main {
+  width: 100%;
+  height: 100px;
+}
+
+.container {
+  width: 90%;
+  max-width: 90rem; /* 1440px */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* FOOTER */
+footer {
+  /* background-color: var(--clr-bg-footer); */
+  padding-top: 5.5rem;
+  padding-bottom: 2rem;
+  margin-top: auto;
+  color: var(--gray);
+  text-transform: capitalize;
+}
+.footer-container {
+  padding: 0 7.5vw;
+}
+.footer-container h2 {
+  padding-bottom: 1.5rem;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4rem;
+  padding-top: 5rem;
+  border-top: 1px solid var(--gray);
+}
+.footer-content-links {
+  flex-grow: 9999;
+  display: flex;
+  gap: 7vw;
+}
+.footer-link-heading {
+  margin-bottom: 0.75rem;
+}
+.footer-link-col {
+  min-width: 130px;
+  max-width: 200px;
+}
+.footer-link-col:last-child {
+  margin-right: auto;
+}
+.footer-link-col > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.footer-links:hover {
+  color: var(--black);
+  font-weight: 500;
+}
+.footer-content-buttons {
+  flex-grow: 1;
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.75rem;
+}
+.footer-button {
+  width: 100%;
+  transition: background-color 0.55s ease;
+}
+.footer-button:hover {
+  background-color: var(--black);
+}
+.footer-sub {
+  font-size: 0.9375rem;
+  margin-top: 6rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.5rem;
+}
+.footer-sub p {
+  line-height: 1.7;
+  font-weight: 400;
+}
+.footer-sub > .policy-and-terms {
+  display: flex;
+  align-items: end;
+  gap: 1rem;
+}
