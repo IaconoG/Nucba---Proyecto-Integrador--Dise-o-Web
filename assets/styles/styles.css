@@ -73,13 +73,15 @@ footer {
 .footer-content-links {
   flex-grow: 9999;
   display: flex;
-  gap: 7vw;
+  flex-wrap: wrap;
+  gap: 30px 1vw;
 }
 .footer-link-heading {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.7rem;
 }
 .footer-link-col {
-  min-width: 130px;
+  flex-grow: 1;
+  min-width: 133px;
   max-width: 200px;
 }
 .footer-link-col:last-child {
