@@ -7,25 +7,40 @@
     <link rel="stylesheet" href="./assets/styles/styles.css" />
     <link rel="stylesheet" href="./assets/styles/base/reset.css" />
     <link rel="stylesheet" href="./assets/styles/base/typography.css" />
+    <!-- Importar icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
     <title>Proyecto Integrador | Diseño Web</title>
   </head>
   <body>
     <header>
       <nav>
-        <h1>GULA</h1>
-        <div>
-          <label for=""></label>
-          <input type="text" />
-          <div>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
+        <div class="nav-contenedor-logo">
+          <h1>GULA</h1>
+          <label for="toggle-menu"><i class="fa-solid fa-bars"></i></label>
+        </div>
+        <input type="checkbox" id="toggle-menu" />
+        <ul class="nav-contenedor-enlaces">
+          <div class="navbar-enlaces-list">
+            <li><a href="">Recetas</a></li>
+            <li><a href="">Nueva Receta</a></li>
+            <li><a href="">Sobre Nosotros</a></li>
           </div>
-        </div>
-        <div class="">
-          <button></button>
-          <button></button>
-        </div>
+          <div class="navbar-enlaces-buttons">
+            <li>
+              <a
+                href="./login.html"
+                class="btn btn--header btn--header--bg-color"
+                >Iniciar sesión</a
+              >
+            </li>
+            <li>
+              <a href="./registro.html" class="btn btn--header">Registrarse</a>
+            </li>
+          </div>
+        </ul>
       </nav>
     </header>
     <main></main>
@@ -35,11 +50,17 @@
         <div class="footer-content">
           <div class="footer-content-links">
             <div class="footer-link-col">
-              <h5 class="footer-link-heading">company</h5>
+              <h5 class="footer-link-heading">información</h5>
               <ul>
                 <li><a class="footer-links">about</a></li>
-                <li><a class="footer-links" href="">contact</a></li>
-                <li><a class="footer-links" href="">documentation</a></li>
+                <li>
+                  <a
+                    class="footer-links"
+                    href="https://github.com/IaconoG/Nucba---Proyecto-Integrador--Dise-o-Web"
+                    target="_blank"
+                    >documentation</a
+                  >
+                </li>
                 <li><a class="footer-links" href="">FAQs</a></li>
               </ul>
             </div>

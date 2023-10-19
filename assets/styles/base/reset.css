@@ -12,11 +12,14 @@ body {
 ol,
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+  font-weight: 500;
 }
 button {
   border: none;

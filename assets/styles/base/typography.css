@@ -17,12 +17,6 @@ h2 {
   font-family: var(--font-heading);
   color: var(--clr-black);
 }
-header {
-}
-main {
-}
-footer {
-}
 h1 {
   font-size: 3rem;
 }
@@ -40,8 +34,6 @@ h5 {
   font-weight: 700;
 }
 p {
-}
-a {
 }
 
 /* TABLET */
