@@ -1,0 +1,23 @@
+/* ARCHIVO DE EFFECTOS */
+
+/* Este efecto nos permite crear un borde inferior que se expande al pasar el mouse por encima */
+.expand-bottom-border {
+  display: inline-block;
+  position: relative;
+}
+.expand-bottom-border::after {
+  content: "";
+  position: absolute;
+  bottom: -20%;
+  left: 50%; /* pone el borde en el centro */
+  transform: translateX(-50%);
+  width: 0%;
+  height: 1px;
+  background: var(--clr-accent);
+  transition: width 0.3s ease-in-out;
+}
+.expand-bottom-border:hover:after {
+  width: 100%;
+}
+
+/*  */
