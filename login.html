@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Importar los estilos -->
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <link rel="stylesheet" href="./assets/styles/base/reset.css" />
+    <link rel="stylesheet" href="./assets/styles/base/typography.css" />
+    <link rel="stylesheet" href="./assets/styles/login-register.css" />
+    <link rel="stylesheet" href="./assets/styles/base/effects.css" />
+    <!-- Importar icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <title>Iniciar sesión</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-login">
+        <div class="nav-contenedor-logo nav-contenedor-logo--login">
+          <a href="./index.html"><h1>GULA</h1></a>
+
+          <span class="navbar-enlace-registro"
+            >No posees una cuenta?
+            <a href="./registro.html" class="expand-bottom-border"
+              >Registrate</a
+            ></span
+          >
+        </div>
+      </nav>
+    </header>
+    <main class="main__login">
+      <form action="" class="login-form">
+        <h2 class="login-form__titulo">Iniciar sesión</h2>
+        <label for="" class="login-form__label">
+          <input
+            type="email"
+            class="login-form__input"
+            name="email"
+            id="email"
+            placeholder="Correo electrónico"
+            aria-label="Correo electrónico"
+          />
+          <span class="login-form__span">Correo electrónico</span>
+        </label>
+
+        <label for="" class="login-form__label">
+          <input
+            type="password"
+            class="login-form__input"
+            name="password"
+            id="password"
+            placeholder="Contraseña"
+            aria-label="Contraseña"
+          />
+          <span class="login-form__span">Contraseña</span>
+        </label>
+
+        <input
+          type="submit"
+          class="btn login-form__boton"
+          value="Iniciar sesión"
+          name="login"
+        />
+        <a href="/404.html" class="" target="_blank"
+          >¿Olvidaste tu contraseña?</a
+        >
+      </form>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+:root {
+  --header-height: 90px;
+}
+
+/* HEADER */
+.nav-contenedor-logo--login {
+  width: 100%;
+}
+.navbar-enlace-registro {
+  font-size: 0.875rem;
+}
+/* el .navbar-enlace-registro a debe poseer un efecto q se crea el border boton*/
+.navbar-enlace-registro a {
+  color: var(--clr-accent);
+}
+
+/* LOGIN */
+.main__login {
+  min-height: calc(100vh - var(--header-height));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* SING UP */
+
+/* FORM */
+.login-form {
+  min-width: 320px;
+  width: 90vw;
+  max-width: 480px;
+  border: 1px solid var(--gray-light);
+  padding: max(45px, 3vw) max(30px, 4vw);
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+.login-form__titulo {
+  margin-bottom: max(25px, 2.5vw);
+  text-align: center;
+}
+
+.login-form__label {
+  margin-bottom: 15px;
+  position: relative;
+  border-bottom: 1px solid #ddd;
+}
+.login-form__input {
+  width: 100%;
+  padding: 10px 0px;
+  margin-top: 20px;
+  /* font-size: clamp(1.125rem, 1.5vw, 1.25rem); */
+  font-size: clamp(1.125rem, 1.25rem, 1.25rem);
+}
+.login-form__input::placeholder {
+  opacity: 0;
+}
+.login-form__span {
+  font-size: 0.875rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(30px);
+  transition-duration: 300ms;
+  pointer-events: none; /* para q no se pueda hacer click en el span (placeholder) */
+}
+.login-form__boton {
+  margin-top: 40px;
+  background: var(--clr-accent);
+}
+.login-form__boton:hover {
+  background-color: var(--clr-accent--hover);
+}
+label:focus-within > span,
+input:not(:placeholder-shown) + span {
+  color: var(--clr-accent);
+  transform: translateY(0px);
+}
+
+.login-form > a {
+  margin-top: 20px;
+  text-align: center;
+  color: var(--clr-accent);
+}
