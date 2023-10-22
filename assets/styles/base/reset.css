@@ -6,7 +6,6 @@
   box-sizing: border-box;
 }
 body {
-  line-height: 1;
   overflow-x: hidden;
 }
 ol,
@@ -24,5 +23,14 @@ a {
 button {
   border: none;
   background: none;
+  cursor: pointer;
+}
+input {
+  border: none;
+  outline: none;
+}
+i {
+  color: var(--clr-accent);
+  font-size: 2rem;
   cursor: pointer;
 }

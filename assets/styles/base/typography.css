@@ -12,8 +12,7 @@ body {
   line-height: 1.5;
   font-family: var(--font-primary);
 }
-h1,
-h2 {
+h1 {
   font-family: var(--font-heading);
   color: var(--clr-black);
 }
