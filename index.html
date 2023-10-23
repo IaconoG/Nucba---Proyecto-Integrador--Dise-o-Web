@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./assets/styles/styles.css" />
     <link rel="stylesheet" href="./assets/styles/base/reset.css" />
     <link rel="stylesheet" href="./assets/styles/base/typography.css" />
+    <link rel="stylesheet" href="./assets/styles/base/effects.css" />
     <!-- Importar icons -->
     <link
       rel="stylesheet"
@@ -18,7 +19,7 @@
     <header>
       <nav>
         <div class="nav-contenedor-logo">
-          <h1>GULA</h1>
+          <a href="#"><h1>GULA</h1></a>
           <label for="toggle-menu"
             ><i class="fa-solid fa-bars toggle-menu"></i
           ></label>
@@ -26,20 +27,20 @@
         <input type="checkbox" id="toggle-menu" />
         <ul class="nav-contenedor-enlaces">
           <div class="navbar-enlaces-list">
-            <li><a href="">Recetas</a></li>
-            <li><a href="">Nueva Receta</a></li>
-            <li><a href="">Sobre Nosotros</a></li>
+            <li><a href="" class="expand-bottom-border">Recetas</a></li>
+            <li><a href="" class="expand-bottom-border">Nueva Receta</a></li>
+            <li><a href="" class="expand-bottom-border">Sobre Nosotros</a></li>
           </div>
           <div class="navbar-enlaces-buttons">
             <li>
-              <a
-                href="./login.html"
-                class="btn btn--header btn--header--bg-color"
-                >Iniciar sesión</a
-              >
+              <a href="./login.html" class="btn btn--header">Iniciar sesión</a>
             </li>
             <li>
-              <a href="./registro.html" class="btn btn--header">Registrarse</a>
+              <a
+                href="./registro.html"
+                class="btn btn--header btn--header--white"
+                >Registrarse</a
+              >
             </li>
           </div>
         </ul>
@@ -54,7 +55,7 @@
             <div class="footer-link-col">
               <h5 class="footer-link-heading">información</h5>
               <ul>
-                <li><a class="footer-links">about</a></li>
+                <li><a class="footer-links" href="/404.html">about</a></li>
                 <li>
                   <a
                     class="footer-links"
@@ -63,7 +64,7 @@
                     >documentation</a
                   >
                 </li>
-                <li><a class="footer-links" href="">FAQs</a></li>
+                <li><a class="footer-links" href="/404.html">FAQs</a></li>
               </ul>
             </div>
             <div class="footer-link-col">
@@ -90,15 +91,17 @@
           </div>
           <div class="footer-content-buttons">
             <button class="btn footer-button">Iniciar Sesion</button>
-            <button class="btn footer-button">Registrarse</button>
+            <button class="btn footer-button btn--footer--white">
+              Registrarse
+            </button>
           </div>
         </div>
         <div class="footer-sub">
           <p>2023 © Iacono Gianfranco ❤️ Nucba</p>
           <div class="policy-and-terms">
-            <a href="#">privacy policy</a>
-            <a href="#">security policy</a>
-            <a href="#">terms of use</a>
+            <a href="/404.html">privacy policy</a>
+            <a href="/404.html">security policy</a>
+            <a href="/404.html">terms of use</a>
           </div>
         </div>
       </div>
