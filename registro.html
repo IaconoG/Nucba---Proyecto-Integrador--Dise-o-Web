@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/styles/base/reset.css" />
     <link rel="stylesheet" href="./assets/styles/base/typography.css" />
     <link rel="stylesheet" href="./assets/styles/login-register.css" />
+    <link rel="stylesheet" href="./assets/styles/base/effects.css" />
     <!-- Importar icons -->
     <link
       rel="stylesheet"
@@ -31,65 +32,120 @@
       </nav>
     </header>
     <main class="main__login">
-      <form action="" class="login-form">
-        <h2 class="login-form__titulo">Registrarse</h2>
-        <label for="" class="login-form__label">
+      <form action="" class="form">
+        <h2 class="form__titulo">Crear una cuenta</h2>
+        <label for="" class="form__label">
           <input
             type="text"
-            class="login-form__input"
+            class="form__input"
             name="username"
             id="username"
             placeholder="Username"
             aria-label="Nombre de Usuario"
             required
           />
-          <span class="login-form__span">Nombre de Usuario</span>
+          <span class="form__span">Nombre de Usuario</span>
         </label>
-        <label for="" class="login-form__label">
+        <label for="" class="form__label">
           <input
             type="email"
-            class="login-form__input"
+            class="form__input"
             name="email"
             id="email"
             placeholder="Correo electrónico"
             aria-label="Correo electrónico"
             required
           />
-          <span class="login-form__span">Correo electrónico</span>
+          <span class="form__span">Correo electrónico</span>
         </label>
 
-        <label for="" class="login-form__label">
+        <label for="" class="form__label">
           <input
             type="password"
-            class="login-form__input"
+            class="form__input"
             name="password"
             id="password"
             placeholder="Contraseña"
             aria-label="Contraseña"
             required
           />
-          <span class="login-form__span">Contraseña</span>
+          <span class="form__span">Contraseña</span>
         </label>
 
-        <label for="" class="login-form__label">
+        <label for="" class="form__label">
           <input
             type="password"
-            class="login-form__input"
+            class="form__input"
             name="password-repeat"
             id="password-repeat"
             placeholder="Contraseña (repetir)"
             aria-label="Contraseña (repetir)"
             required
           />
-          <span class="login-form__span">Repetir Contraseña</span>
+          <span class="form__span">Repetir Contraseña</span>
         </label>
 
-        <!-- TODO: Agregar imput para elegir el nivel de experienci en cocina -->
+        <div class="form-exprience-container">
+          <p>Selecciona tu nivel de cocina</p>
+          <div class="experience-options">
+            <label for="principiante" class="form__label--radio">
+              <input
+                type="radio"
+                id="principiante"
+                class="form__input--radio"
+                name="experiencia"
+                value="principiante"
+              />
+              <span class="form__span--radio">Principiante</span>
+            </label>
 
+            <label for="intermedio" class="form__label--radio">
+              <input
+                type="radio"
+                class="form__input--radio"
+                id="intermedio"
+                name="experiencia"
+                value="intermedio"
+              />
+              <span class="form__span--radio">Intermedio</span>
+            </label>
+            <label for="experto" class="form__label--radio">
+              <input
+                type="radio"
+                class="form__input--radio"
+                id="experto"
+                name="experiencia"
+                value="experto"
+              />
+              <span class="form__span--radio">Experto</span>
+            </label>
+          </div>
+        </div>
+        <div class="form-terminos-condicion__container">
+          <p>
+            Al hacer clic en "Registrarte", aceptas nuestras
+            <a
+              class="expand-bottom-border expand-bottom-border--form"
+              href="/404.html"
+              >Condiciones</a
+            >, la
+            <a
+              class="expand-bottom-border expand-bottom-border--form"
+              href="/404.html"
+              >Política de privacidad</a
+            >
+            y la
+            <a
+              class="expand-bottom-border expand-bottom-border--form"
+              href="/404.html"
+              >Política de cookies</a
+            >.
+          </p>
+        </div>
         <input
           type="submit"
-          class="btn login-form__boton"
-          value="Registrarse"
+          class="btn form__boton"
+          value="Registrarte"
           name="login"
         />
       </form>

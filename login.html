@@ -32,39 +32,43 @@
       </nav>
     </header>
     <main class="main__login">
-      <form action="" class="login-form">
-        <h2 class="login-form__titulo">Iniciar sesión</h2>
-        <label for="" class="login-form__label">
+      <form action="" class="form">
+        <h2 class="form__titulo">Iniciar sesión</h2>
+        <label for="" class="form__label">
           <input
             type="email"
-            class="login-form__input"
+            class="form__input"
             name="email"
             id="email"
             placeholder="Correo electrónico"
             aria-label="Correo electrónico"
+            required
           />
-          <span class="login-form__span">Correo electrónico</span>
+          <span class="form__span">Correo electrónico</span>
         </label>
 
-        <label for="" class="login-form__label">
+        <label for="" class="form__label">
           <input
             type="password"
-            class="login-form__input"
+            class="form__input"
             name="password"
             id="password"
             placeholder="Contraseña"
             aria-label="Contraseña"
+            required
           />
-          <span class="login-form__span">Contraseña</span>
+          <span class="form__span">Contraseña</span>
         </label>
 
         <input
           type="submit"
-          class="btn login-form__boton"
+          class="btn form__boton"
           value="Iniciar sesión"
           name="login"
         />
-        <a href="/404.html" class="" target="_blank"
+        <a
+          href="/404.html"
+          class="expand-bottom-border expand-bottom-border--form"
           >¿Olvidaste tu contraseña?</a
         >
       </form>
