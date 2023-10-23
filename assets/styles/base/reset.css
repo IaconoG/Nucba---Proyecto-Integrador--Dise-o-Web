@@ -29,6 +29,9 @@ input {
   border: none;
   outline: none;
 }
+input[type="radio"] {
+  accent-color: var(--clr-accent); /* Cambia el color del radio button */
+}
 i {
   color: var(--clr-accent);
   font-size: 2rem;

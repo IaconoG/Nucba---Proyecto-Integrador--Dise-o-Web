@@ -20,4 +20,9 @@
   width: 100%;
 }
 
-/*  */
+/* correccion */
+.expand-bottom-border--form::after {
+  left: 1%; /* pone el borde en el centro */
+  transform: none;
+  bottom: 0%;
+}
