@@ -115,9 +115,6 @@ nav > * {
   gap: clamp(0.5rem, 1.5vw, 4rem);
   font-size: 0.875rem;
 }
-.nav-contenedor-enlaces li {
-  min-width: fit-content;
-}
 .navbar-enlaces-buttons {
   display: flex;
   gap: clamp(0.5rem, 1.5vw, 2rem);
@@ -194,6 +191,7 @@ footer {
 .footer-button {
   width: 100%;
   max-width: 250px;
+  text-align: center;
 }
 .footer-sub {
   font-size: 0.9375rem;
