@@ -8,10 +8,11 @@
 }
 .navbar-enlace-registro {
   font-size: 0.875rem;
+  text-align: end;
 }
 /* el .navbar-enlace-registro a debe poseer un efecto q se crea el border boton*/
 .navbar-enlace-registro a {
-  color: var(--clr-accent);
+  color: var(--clr-secondary);
 }
 
 /* LOGIN */
@@ -22,20 +23,19 @@
   align-items: center;
 }
 
-/* SING UP */
-
 /* FORM */
 .form {
-  min-width: 410px;
+  margin: 5rem 0;
   width: 90vw;
   max-width: 480px;
   border: 1px solid var(--gray-light);
-  padding: max(45px, 2.5vw) max(30px, 2.5vw);
+  padding: max(25px, 2.5vw) max(20px, 2.5vw);
   display: flex;
   flex-direction: column;
   border-radius: 8px;
   background-color: var(--white);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 .form > *:not(h2) {
   margin-top: 20px;
@@ -56,7 +56,7 @@
 .form__input {
   width: 100%;
   padding: 10px 0px;
-  font-size: clamp(1.125rem, 1.25rem, 1.25rem);
+  font-size: clamp(1rem, 1.1rem, 1.125rem);
 }
 .form__input::placeholder {
   opacity: 0;
@@ -72,16 +72,18 @@
 }
 .form__boton {
   margin-top: 40px;
-  background: var(--clr-accent);
+  background: var(--clr-primary);
   border-radius: 4px;
 }
 .form__boton:hover {
-  background-color: var(--clr-accent--hover);
+  background-color: var(--clr-accent--darker);
+  border-color: var(--clr-accent--darker);
+  color: var(--white);
 }
 label:focus-within > .form__span,
 input:not(:placeholder-shown) + .form__span {
   /* placeholder-shown es un pseudo selector q se aplica cuando el placeholder está visible */
-  color: var(--clr-accent);
+  color: var(--clr-secondary);
   transform: translateY(0px);
 }
 
@@ -91,14 +93,18 @@ input:not(:placeholder-shown) + .form__span {
 .experience-options {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px 5px;
 }
 .form__label--radio {
-  max-width: fit-content;
+  min-width: 120px;
+  width: 45%;
+  max-width: 300px;
   font-weight: 500;
   display: flex;
+  justify-content: space-between;
   color: var(--black);
   line-height: 36px;
-  gap: 8px;
   padding: 0 8px;
   border: 1px solid var(--gray);
   border-radius: 4px;
@@ -113,9 +119,16 @@ input:not(:placeholder-shown) + .form__span {
 /* Cambiar al color de acento cuando el input está seleccionado o tiene foco */
 .form__input--radio:checked + span {
   /* + permite seleccionar elementos q estan despues del input y son hermanos directos */
-  color: var(--clr-accent);
+  color: var(--clr-primary);
 }
 
 .form-terminos-condicion__container p {
   font-size: 0.75rem;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 320px) {
+  .form__label--radio {
+    width: 100%;
+  }
 }
