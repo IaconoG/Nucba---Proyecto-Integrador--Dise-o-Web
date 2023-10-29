@@ -27,9 +27,9 @@
 .form {
   margin: 5rem 0;
   width: 90vw;
-  max-width: 480px;
+  max-width: 550px;
   border: 1px solid var(--gray-light);
-  padding: max(25px, 2.5vw) max(20px, 2.5vw);
+  padding: clamp(2rem, 5vw, 4rem) max(20px, 2vw);
   display: flex;
   flex-direction: column;
   border-radius: 8px;
@@ -37,11 +37,11 @@
   /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1); */
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
-.form > *:not(h2) {
+.form > *:not(.form__titulo) {
   margin-top: 20px;
 }
 .form__titulo {
-  margin-bottom: max(25px, 2.5vw);
+  margin-bottom: clamp(1rem, 2.5vw, 2.5vw);
   text-align: center;
 }
 .form a {
@@ -49,7 +49,7 @@
 }
 
 .form__label {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   position: relative;
   border-bottom: 1px solid #ddd;
 }
