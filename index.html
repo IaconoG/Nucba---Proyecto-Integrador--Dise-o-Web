@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Importar los estilos -->
-    <link rel="stylesheet" href="./assets/styles/styles.css" />
     <link rel="stylesheet" href="./assets/styles/base/reset.css" />
     <link rel="stylesheet" href="./assets/styles/base/typography.css" />
     <link rel="stylesheet" href="./assets/styles/base/effects.css" />
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
     <!-- Importar icons -->
     <link
       rel="stylesheet"
@@ -27,13 +27,13 @@
         <input type="checkbox" id="toggle-menu" />
         <ul class="nav-contenedor-enlaces">
           <div class="navbar-enlaces-list">
-            <li><a href="" class="expand-bottom-border">Recetas</a></li>
-            <li><a href="" class="expand-bottom-border">Nueva Receta</a></li>
             <li>
               <a href="#about-us" class="expand-bottom-border"
                 >Sobre Nosotros</a
               >
             </li>
+            <li><a href="" class="expand-bottom-border">Recetas</a></li>
+            <li><a href="" class="expand-bottom-border">Nueva Receta</a></li>
           </div>
           <div class="navbar-enlaces-buttons">
             <li>
@@ -77,7 +77,7 @@
           <div class="about-us__header">
             <!-- <img src="/assets/icons/Pizza.svg" alt="icono pizza" /> -->
             <h2 class="about-us__tittle">¿Quienes somos?</h2>
-            <img src="/assets/icons/Ramen.svg" alt="icono pizza" />
+            <img class="icon" src="/assets/icons/Ramen.svg" alt="icono pizza" />
           </div>
           <div class="about-us__info">
             <div class="about-us__text">
@@ -88,7 +88,14 @@
                 Creemos que cada plato cuenta una historia, cada sabor despierta
                 una emoción y cada receta compartida es un viaje compartido.
               </p>
-              <h3>Nuestro objetivo</h3>
+              <div class="about-us__text__subtxt">
+                <h3>Nuestro objetivo</h3>
+                <img
+                  class="icon icon--burger"
+                  src="/assets/icons/Burger.svg"
+                  alt="icono burger"
+                />
+              </div>
               <p>
                 Nuestro objetivo es crear una comunidad de amantes de la comida
                 que puedan compartir sus recetas, historias y experiencias
@@ -114,7 +121,15 @@
         </div>
       </section>
 
-      <!-- <section class="recetas"></section> -->
+      <section class="recetas">
+        <div class="recetas__content">
+          <div class="recetas__header">
+            <img class="icon" src="/assets/icons/Pizza.svg" alt="icono pizza" />
+            <h2 class="recetas__tittle">Recetas de la comunidad</h2>
+            <img class="icon" src="/assets/icons/Ramen.svg" alt="icono pizza" />
+          </div>
+        </div>
+      </section>
       <!-- <section class="prueba">
         <div>
           <div class="box box--clr-primary"></div>
@@ -131,7 +146,7 @@
     </main>
     <footer>
       <div class="footer-container">
-        <h3 class="footer-tittle">GULA</h3>
+        <h3 class="footer-tittle footer__tittle--color">GULA</h3>
         <div class="footer-content">
           <div class="footer-content-links">
             <div class="footer-link-col">
