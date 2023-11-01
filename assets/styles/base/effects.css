@@ -26,3 +26,9 @@
   transform: none;
   bottom: 0%;
 }
+
+@media screen and (max-width: 670px) {
+  .expand-bottom-border::after {
+    all: unset;
+  }
+}

@@ -73,7 +73,7 @@ li:active,
 }
 .icon {
   /* clamp con maximo de 36px */
-  width: clamp(24px, 10vw, 36px);
+  width: clamp(24px, 8vw, 36px);
   height: auto;
   filter: invert(62%) sepia(64%) saturate(1112%) hue-rotate(311deg)
     brightness(106%) contrast(118%);
@@ -160,15 +160,13 @@ main {
 /* default section */
 main > section {
   max-width: 1440px;
-  min-height: 40vh; /* FIXME: eliminar linea */
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: clamp(2rem, 4vw, 3rem) auto;
   padding: clamp(2rem, 4vw, 4rem) 2.5vw;
-
-  border-radius: 2rem; /* FIMXE: eliminar linea de prueba */
+  border-radius: 2rem;
 }
 
 /* HERO */
@@ -219,7 +217,7 @@ main > section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 5vw 10px;
 }
 .about-us__info > div {
   margin: 0 clamp(0.5rem, 1vw, 1rem);
@@ -269,6 +267,47 @@ main > section {
 .about-us__img:last-child {
   align-self: flex-end;
   margin-left: auto;
+}
+
+/* Recetas */
+
+/* Unete */
+.unete {
+  border: 1px solid var(--clr-accent);
+  text-align: center;
+  padding-block: clamp(2.5rem, 4.5vw, 4.5rem) 0;
+}
+.unete__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: clamp(2.5rem, 4.5vw, 4.5rem) 0;
+}
+.unete__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: clamp(1rem, 2.5vw, 2.5rem);
+}
+.unete p {
+  font-size: 1.25rem;
+  width: 75%;
+}
+.btn--unete {
+  width: fit-content;
+  border-radius: 99999rem;
+  font-size: 1.125rem;
+  padding-inline: 3vw;
+}
+.unete__img {
+  /* width: 75%; */
+  position: relative;
+  left: 50%; /* ajusta esta propiedad según la posición horizontal que desees */
+  transform: translate(-50%, -10%);
+  z-index: -1;
 }
 
 .container {
@@ -443,18 +482,20 @@ footer {
     display: flex;
   }
 }
-
+@media screen and (max-width: 609px) {
+  .icon--burger {
+    display: block;
+  }
+  .about-us__img {
+    max-height: 150px;
+  }
+}
 @media screen and (max-width: 600px) {
   .footer-content-links {
     justify-content: space-around;
   }
   .footer-content-buttons {
     align-items: center;
-  }
-}
-@media screen and (max-width: 563px) {
-  .icon--burger {
-    display: block;
   }
 }
 
@@ -469,9 +510,11 @@ footer {
     padding-inline: 2.5vw;
   }
   .about-us__img {
-    max-height: 125px;
     width: 100%;
     max-width: 100%;
+  }
+  .about-us__text {
+    min-width: 280px;
   }
 }
 /* MOBILE M */

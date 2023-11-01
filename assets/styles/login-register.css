@@ -12,7 +12,7 @@
 }
 /* el .navbar-enlace-registro a debe poseer un efecto q se crea el border boton*/
 .navbar-enlace-registro a {
-  color: var(--clr-secondary);
+  color: var(--clr-accent);
 }
 
 /* LOGIN */
@@ -83,7 +83,7 @@
 label:focus-within > .form__span,
 input:not(:placeholder-shown) + .form__span {
   /* placeholder-shown es un pseudo selector q se aplica cuando el placeholder está visible */
-  color: var(--clr-secondary);
+  color: var(--clr-accent);
   transform: translateY(0px);
 }
 
