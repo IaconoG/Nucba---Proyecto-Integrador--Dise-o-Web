@@ -104,7 +104,7 @@ input:not(:placeholder-shown) + .form__span {
   display: flex;
   justify-content: space-between;
   color: var(--black);
-  line-height: 36px;
+  line-height: clamp(28px, 5vw, 36px);
   padding: 0 8px;
   border: 1px solid var(--gray);
   border-radius: 4px;
