@@ -10,7 +10,6 @@
   font-size: 0.875rem;
   text-align: end;
 }
-/* el .navbar-enlace-registro a debe poseer un efecto q se crea el border boton*/
 .navbar-enlace-registro a {
   color: var(--clr-accent);
 }
